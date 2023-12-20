@@ -1,0 +1,24 @@
+<!ELEMENT ident (nom, pnom,pnom?,pnom?,datenaiss,langues,permis,contact)>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT pnom (#PCDATA)>
+<!ELEMENT datenaiss (#PCDATA)>
+<!ELEMENT permis EMPTY>
+<!ELEMENT langues (langue+)>
+<!ELEMENT langue EMPTY>
+
+<!ATTLIST permis
+	type (A|B|C|AB|AC|BC|ABC) #REQUIRED
+>
+<!ATTLIST langue
+	langName (FR|EN|ES|LSF) #REQUIRED
+	luEcritParle (true|false) #IMPLIED
+>
+<!--
+	au moins un port ou un seul mail ou un couple fixe et mail(avec plusieurs mails possible
+l'ensemble conditionnelle est facultatif et replicable 
+-->
+<!ELEMENT contact ( ( port+ | mail | (fixe, mail+) )* )>
+<!ELEMENT fixe (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT port (#PCDATA)>

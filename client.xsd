@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:simpleType name="ST_mail">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="\w(.?[\w-])*@\w(.?[\w-])*.[a-zA-Z]{2,7}"/>
+	</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="ST_PostalCodeFR">
+	<xs:restriction base="xs:string">
+			<xs:pattern value="((((0[1-9])|([1-8]\d)|9[0-5])\d)|97[1-4])\d{2}"/>
+	</xs:restriction>
+</xs:simpleType>
+	<xs:attribute name="idclient" type="xs:int"/>
+	<xs:simpleType name="ST_Str_max32">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="32"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CT_ident">
+		<xs:sequence>
+			<xs:element name="destinataire">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ST_Str_max32">
+							<xs:attribute name="civilite">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="Mr"/>
+										<xs:enumeration value="Mlle"/>
+										<xs:enumeration value="Mme"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:attribute>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:choice>
+				<xs:element name="mail" type="ST_mail"/>
+				<xs:sequence>
+					<xs:element name="adr1"/>
+					<xs:element name="adr2" minOccurs="0">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:minLength value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="cp" type="ST_PostalCodeFR"/>
+					<xs:element name="ville" type="xs:string"/>
+				</xs:sequence>
+			</xs:choice>
+		</xs:sequence>
+		<xs:attribute ref="idclient"/>
+	</xs:complexType>
+	<xs:element name="client" type="CT_ident"/>
+</xs:schema>

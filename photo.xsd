@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿champix (champix) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<!--include pour reprise du format de mail avec pattern-->
+<xs:include schemaLocation="client.xsd"/>
+	<xs:attribute name="titre" type="xs:boolean"/>
+	<xs:attribute name="path" type="xs:string"/>
+	<xs:element name="titre" type="xs:string"/>
+	<!--groupe d'attrib de les balises image-->
+	<xs:attributeGroup name="imageAttrib">
+		<xs:annotation>
+			<xs:documentation>image attributes couv and page</xs:documentation>
+		</xs:annotation>
+		<xs:attribute ref="path" use="required"/>
+		<xs:attribute name="href" type="xs:string" use="required"/>
+	</xs:attributeGroup>
+	<!--types pour balise image-->
+	<xs:complexType name="CT_couv_image">
+		<xs:annotation>
+			<xs:documentation>Type pour l'image de couverture</xs:documentation>
+		</xs:annotation>
+		<xs:attributeGroup ref="imageAttrib"/>
+	</xs:complexType>
+	<xs:complexType name="CT_page_image">
+		<xs:annotation>
+			<xs:documentation>Type pour les image des page</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="imageAttrib"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--section signature-->
+	<xs:simpleType name="ST_tel">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="0[1-8]([. -]?\d{2}){4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="mail" type="ST_mail"/>
+	<xs:element name="tel" type="ST_tel"/>
+	<xs:complexType name="CT_signature">
+		<xs:sequence>
+			<xs:element ref="mail"/>
+			<xs:element ref="tel"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="signature" type="CT_signature"/>
+	<!--section page-->
+	<xs:complexType name="CT_page">
+		<xs:sequence>
+			<xs:element name="image" type="CT_page_image" maxOccurs="4"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="page" type="CT_page"/>
+	<!--section pages-->
+	<xs:complexType name="CT_pages">
+		<xs:sequence>
+			<xs:element ref="page" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="titre" use="required"/>
+	</xs:complexType>
+	<xs:element name="pages" type="CT_pages"/>
+	<!--section couv-->
+	<xs:complexType name="CT_couv">
+		<xs:sequence>
+			<xs:element name="image" type="CT_couv_image"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="couv" type="CT_couv"/>
+	<!--section photos-->
+	<!--groupe d'attrib de la balise root-->
+	<xs:attributeGroup name="rootAttrib">
+		<xs:annotation>
+			<xs:documentation>photos root attributes</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="theme" type="xs:string" use="required"/>
+		<xs:attribute name="intercal" type="xs:boolean" use="required"/>
+		<xs:attribute name="OnlyComment" type="xs:boolean" use="required"/>
+	</xs:attributeGroup>
+	<xs:complexType name="CT_photos">
+		<xs:sequence>
+			<xs:element ref="titre"/>
+			<xs:element ref="couv"/>
+			<xs:element ref="pages"/>
+			<xs:element ref="signature"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="rootAttrib"/>
+	</xs:complexType>
+	<xs:element name="photos" type="CT_photos"/>
+</xs:schema>

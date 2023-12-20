@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="client.xsd"/>
+	
+	<xs:attribute name="typeUnit">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="HOURBYMETER2"/>
+				<xs:enumeration value="HOUR"/>
+				<xs:enumeration value="UNIT"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:simpleType name="ST_1FRACTION_DIGIT">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CT_ligne">
+		<xs:sequence>
+			<xs:element name="ref" type="xs:string"/>
+			<xs:element name="designation" type="xs:string"/>
+			<xs:element name="surface" minOccurs="0">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="xs:decimal">
+							<xs:attribute name="unite" type="xs:string"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="phtByUnit" type="xs:decimal"/>
+			<xs:element name="nbUnit">
+				<xs:complexType>
+					<xs:simpleContent>
+						<xs:extension base="ST_1FRACTION_DIGIT">
+							<xs:attribute ref="typeUnit"/>
+						</xs:extension>
+					</xs:simpleContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="stotligne" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ligne" type="CT_ligne">
+		<xs:annotation>
+			<xs:documentation>Balise pour une ligne de facture</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="CT_lignes">
+		<xs:sequence>
+			<xs:element ref="ligne" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="lignes" type="CT_lignes"/>
+	<xs:simpleType name="ST_dateAfter2000">
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="2000-01-01"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="factures">
+		<xs:complexType>
+			<xs:sequence>
+				<!--contenu de noeuds elements enfants-->
+				<xs:element name="facture" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="client" minOccurs="0" >
+								<!--<xs:complexType>
+									<xs:sequence/>
+									<xs:attribute ref="idclient"/>
+								</xs:complexType>-->
+							</xs:element>
+							<xs:element ref="lignes"/>
+						</xs:sequence>
+						<xs:attribute name="numfacture" type="xs:int"/>
+						<xs:attribute ref="idclient"/>
+						<xs:attribute name="refdevis" type="xs:int" use="optional"/>
+						<xs:attribute name="datefacture" type="ST_dateAfter2000"/>
+						<xs:attribute name="type">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Devis"/>
+									<xs:enumeration value="Facture"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="rsets" type="xs:string"/>
+			<xs:attribute name="cpets" type="ST_PostalCodeFR"/>
+			<xs:attribute name="villeets">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Paris"/>
+						<xs:enumeration value="Marseille"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="adr1ets" type="xs:string"/>
+			<xs:attribute name="adr2ets" type="xs:string"/>
+			<xs:attribute name="dateeditionXML" type="ST_dateAfter2000"/>
+			<xs:attribute name="logourl" type="xs:anyURI" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+<!--
+<!ELEMENT factures ()>
+<!ATTLIST factures rsets CDATA #REQUIRED>
+-->

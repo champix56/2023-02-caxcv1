@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE cvs SYSTEM "vs.dtd">
+<cvs>
+	<recruter>&fileValue;</recruter>
+	<bestCV id="C452"/>
+	<selectedCV ids="C452 C452"/>
+	<cv id="C452">
+		<ident>
+			<nom>D&euro;SORBAIX</nom>
+			<pnom>Alexandre</pnom>
+			<pnom>Dominique</pnom>
+			<pnom>Jöel</pnom>
+			<datenaiss>1984-08-03</datenaiss>
+			<langues>
+				<langue langName="FR" luEcritParle="true"/>
+				<langue langName="EN" luEcritParle="true"/>
+				<langue langName="LSF"/>
+			</langues>
+			<permis type="AB"/>
+		</ident>
+		<phraseAccroche>Je souhaite mettre a votre disposition mes compétences en informatique et permettre de developper les capacités informatique de votre entreprise</phraseAccroche>
+		<formations>
+			<formation>
+				<anneeDeb>2007</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<lieu>ITIS Formation (91)</lieu>
+				<diplomes>
+					<diplome id="d6852">
+						<intitule>BTS Informatique de Gestion</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+					<diplome>
+						<intitule>DEES en alternance</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+				</diplomes>
+			</formation>
+		</formations>
+		<experiences>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2011</anneeDeb>
+				<anneeFin>2012</anneeFin>
+				<ets>Faculté dauphine</ets>
+				<etsCmpl>paris (75)</etsCmpl>
+				<intitule>Vacataire pour la licence management des organisations. matiere : TIC</intitule>
+			</experience>
+		</experiences>
+	</cv>
+	<cv id="C455">
+		<ident>
+			<nom>DESORBAIX</nom>
+			<pnom>Alexandre</pnom>
+			<pnom>Dominique</pnom>
+			<pnom>Jöel</pnom>
+			<datenaiss>1984-08-03</datenaiss>
+			<langues>
+				<langue langName="FR" luEcritParle="true"/>
+				<langue langName="EN" luEcritParle="true"/>
+				<langue langName="LSF"/>
+			</langues>
+			<permis type="AB"/>
+		</ident>
+		<phraseAccroche>Je souhaite mettre a votre disposition mes compétences en informatique et permettre de developper les capacités informatique de votre entreprise</phraseAccroche>
+		<formations>
+			<formation>
+				<anneeDeb>2007</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<lieu>ITIS Formation (91)</lieu>
+				<diplomes>
+					<diplome>
+						<intitule>BTS Informatique de Gestion</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+					<diplome>
+						<intitule>DEES en alternance</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+				</diplomes>
+			</formation>
+		</formations>
+		<experiences>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2011</anneeDeb>
+				<anneeFin>2012</anneeFin>
+				<ets>Faculté dauphine</ets>
+				<etsCmpl>paris (75)</etsCmpl>
+				<intitule>Vacataire pour la licence management des organisations. matiere : TIC</intitule>
+			</experience>
+		</experiences>
+	</cv>
+	<cv id="C458">
+		<ident>
+			<nom>DESORBAIX</nom>
+			<pnom>Alexandre</pnom>
+			<pnom>Dominique</pnom>
+			<pnom>Jöel</pnom>
+			<datenaiss>1984-08-03</datenaiss>
+			<langues>
+				<langue langName="FR" luEcritParle="true"/>
+				<langue langName="EN" luEcritParle="true"/>
+				<langue langName="LSF"/>
+			</langues>
+			<permis type="AB"/>
+		</ident>
+		<phraseAccroche>Je souhaite mettre a votre disposition mes compétences en informatique et permettre de developper les capacités informatique de votre entreprise</phraseAccroche>
+		<formations>
+			<formation>
+				<anneeDeb>2007</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<lieu>ITIS Formation (91)</lieu>
+				<diplomes>
+					<diplome>
+						<intitule>BTS Informatique de Gestion</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+					<diplome>
+						<intitule>DEES en alternance</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+				</diplomes>
+			</formation>
+		</formations>
+		<experiences>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2011</anneeDeb>
+				<anneeFin>2012</anneeFin>
+				<ets>Faculté dauphine</ets>
+				<etsCmpl>paris (75)</etsCmpl>
+				<intitule>Vacataire pour la licence management des organisations. matiere : TIC</intitule>
+			</experience>
+		</experiences>
+	</cv>
+	<cv id="C482">
+		<ident>
+			<nom>DESORBAIX</nom>
+			<pnom>Alexandre</pnom>
+			<pnom>Dominique</pnom>
+			<pnom>Jöel</pnom>
+			<datenaiss>1984-08-03</datenaiss>
+			<langues>
+				<langue langName="FR" luEcritParle="true"/>
+				<langue langName="EN" luEcritParle="true"/>
+				<langue langName="LSF"/>
+			</langues>
+			<permis type="AB"/>
+		</ident>
+		<phraseAccroche>Je souhaite mettre a votre disposition mes compétences en informatique et permettre de developper les capacités informatique de votre entreprise</phraseAccroche>
+		<formations>
+			<formation>
+				<anneeDeb>2007</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<lieu>ITIS Formation (91)</lieu>
+				<diplomes>
+					<diplome>
+						<intitule>BTS Informatique de Gestion</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+					<diplome>
+						<intitule>DEES en alternance</intitule>
+						<obtenu>true</obtenu>
+					</diplome>
+				</diplomes>
+			</formation>
+		</formations>
+		<experiences>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2009</anneeDeb>
+				<anneeFin>2011</anneeFin>
+				<ets>Itis Formation</ets>
+				<etsCmpl> evry (91)</etsCmpl>
+				<intitule>Developpement d'un ERP</intitule>
+			</experience>
+			<experience>
+				<anneeDeb>2011</anneeDeb>
+				<anneeFin>2012</anneeFin>
+				<ets>Faculté dauphine</ets>
+				<etsCmpl>paris (75)</etsCmpl>
+				<intitule>Vacataire pour la licence management des organisations. matiere : TIC</intitule>
+			</experience>
+		</experiences>
+	</cv>
+</cvs>

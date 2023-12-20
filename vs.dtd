@@ -1,0 +1,58 @@
+<!ENTITY % idDtdDecla "id ID #REQUIRED">
+<!--usage d'inclusion-->
+<!ENTITY % ident.inc  SYSTEM "ident.dtd">
+%ident.inc;
+
+<!ELEMENT cvs (recruter,bestCV,selectedCV,cv+)>
+<!ELEMENT recruter (#PCDATA)>
+<!ELEMENT cv (ident, phraseAccroche, formations, experiences)>
+
+<!ELEMENT bestCV EMPTY>
+<!ELEMENT selectedCV EMPTY>
+
+<!ATTLIST bestCV id IDREF #REQUIRED>
+<!ATTLIST selectedCV ids CDATA #REQUIRED>
+
+
+<!ATTLIST cv
+	%idDtdDecla;
+	dateDepot CDATA #IMPLIED
+>	
+<!ATTLIST diplome %idDtdDecla;>
+
+
+<!ELEMENT phraseAccroche (#PCDATA)>
+
+<!--
+		common CDATA @ttr
+-->
+<!ELEMENT anneeDeb (#PCDATA)>
+<!ELEMENT anneeFin (#PCDATA)>
+<!ELEMENT intitule (#PCDATA)>
+
+<!--
+		formations
+-->
+<!ELEMENT formations (formation*)>
+<!ELEMENT formation (anneeDeb,anneeFin,lieu,diplomes)>
+
+<!ELEMENT lieu (#PCDATA)>
+<!ELEMENT diplomes (diplome+)>
+
+<!ELEMENT diplome (intitule,obtenu)>
+<!ELEMENT obtenu (#PCDATA)>
+<!--
+		experiences
+-->
+<!ELEMENT experiences (experience*)>
+<!ELEMENT experience (anneeDeb,anneeFin, ets,etsCmpl?,intitule)>
+
+<!ELEMENT ets (#PCDATA)>
+<!ELEMENT etsCmpl (#PCDATA)>
+
+<!--
+		ENTITY 
+-->
+<!ENTITY euro "&#x20ac;">
+<!ENTITY signatureName "DESORBAIX Alexandre">
+<!ENTITY fileValue SYSTEM "text.txt">

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<photos theme="C:\Documents and Settings\Administrateur\Application Data\fond1372366265.png" OnlyComment="false" intercal="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="photo.xsd">
+	<titre>Album Photo web de Alex</titre>
+	<couv>
+		<image href="MG_1932_DxOEPREUVE-EPRUVEL.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+	</couv>
+	<pages titre="true">
+		<page>
+			<image href="Canon-EOS-5D-Mark-IIIH97C9470RS-L.jpg" path="http://clanphs.free.fr/wp-content/uploads/">firework</image>
+			<image href="10599489_10152664721102884_8998763423280924639_n.jpg" path="http://clanphs.free.fr/wp-content/uploads/">fire2</image>
+			<image href="10616075_10152664721277884_204613508926358332_n.jpg" path="http://clanphs.free.fr/wp-content/uploads/">Fire Locamariaquer</image>
+			<image href="10637686_10152666826427884_326359702_n.jpg" path="http://clanphs.free.fr/wp-content/uploads/">fire versailles</image>
+		</page>
+		<page>
+			<image href="10637762_10152666826227884_1150744547_n.jpg" path="http://clanphs.free.fr/wp-content/uploads/">versailles</image>
+			<image href="10643440_10152666821127884_1257003855_n-688x457.jpg" path="http://clanphs.free.fr/wp-content/uploads/">versailles 4</image>
+			<image href="10659229_10152664721312884_1912826066174067960_n.jpg" path="http://clanphs.free.fr/wp-content/uploads/">loc</image>
+			<image href="ChampsChanvre-s.jpg" path="http://clanphs.free.fr/wp-content/uploads/">loc3</image>
+		</page>
+		<page>
+			<image href="11313_10152664722977884_68115858871786570_n.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="934819_10152664725362884_952774551003375319_n-688x458.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="H97C6399-Copier.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="H97C6499-Copier.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+		</page>
+		<page>
+			<image href="H97C9306FINAL-EPREUVE-EPRUVE-L.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="MG_0157_8_9_tonemappedEPRUVE-EPRUVEL.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="MG_0750EPREUVE-EPRUVEL.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="MG_1932_DxOEPREUVE-EPRUVEL.jpg" path="http://clanphs.free.fr/wp-content/uploads/">Paris</image>
+		</page>
+		<page>
+			<image href="MG_1936_DxOepreuve-EPRUVEL.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="quiberonCoteSauvage-688x458.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="SH97C9989.jpg" path="http://clanphs.free.fr/wp-content/uploads/">Traffic jam</image>
+			<image href="s_H97C0775.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+		</page>
+		<page>
+			<image href="s_H97C1010.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="S_H97C7350b.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="S_H97C9008.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+			<image href="S_H97C9131.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+		</page>
+		<page>
+			<image href="S_H97C9173.jpg" path="http://clanphs.free.fr/wp-content/uploads/">Pont chartres</image>
+			<image href="S_H97C9193.jpg" path="http://clanphs.free.fr/wp-content/uploads/"/>
+		</page>
+	</pages>
+	<signature>
+		<mail>desorbaix@free.fr</mail>
+		<tel>06.64.27.63.60</tel>
+	</signature>
+</photos>
